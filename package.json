@@ -1,0 +1,23 @@
+{
+  "name": "monolithic-express-docker-template",
+  "version": "1.0.0",
+  "description": "The template of containerized monolithic Express application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Monolithic",
+    "Express",
+    "Docker",
+    "Template"
+  ],
+  "author": "Eric Julianto",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.3",
+    "morgan": "^1.10.0",
+    "nunjucks": "^3.2.4"
+  }
+}

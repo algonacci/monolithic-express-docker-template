@@ -1,0 +1,9 @@
+{% extends "components/masterLayout.njk" %}
+
+{% block content %}
+    <div class="container" x-data="{name: 'Anjay'}">
+        <h1>{{ title }}</h1>
+        <p>{{ message }}</p>
+        <p x-text="name"></p>
+    </div>
+{% endblock content %}
