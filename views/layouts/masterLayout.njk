@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     {% include "includes/head.njk" %}
-    <body>
+    <body class="font-nunito flex flex-col h-screen justify-between">
+        {% include "components/navbar.njk" %}
         {% block content %}{% endblock content %}
 
+        {% include "components/footer.njk" %}
         {% include "includes/script.njk" %}
     </body>
 </html>

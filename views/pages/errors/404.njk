@@ -1,10 +1,9 @@
-{% extends "components/masterLayout.njk" %}
+{% extends "layouts/masterLayout.njk" %}
 
 {% block content %}
-    <div class="container mt-5">
-        <div class="alert alert-danger" role="alert">
-            <h4 class="alert-heading">404 Not Found</h4>
-            <p>URL not found!</p>
-        </div>
+    <div class="alert alert-danger flex flex-col items-center gap-5" role="alert">
+        <h4 class="alert-heading font-bold text-2xl">404 Not Found</h4>
+        <img src="images/sorry.gif" alt="error-images" width="15%">
+        <p class="font-bold text-lg">URL not found!</p>
     </div>
 {% endblock %}

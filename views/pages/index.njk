@@ -1,9 +1,12 @@
-{% extends "components/masterLayout.njk" %}
+{% extends "layouts/masterLayout.njk" %}
 
 {% block content %}
-    <div class="container" x-data="{name: 'Anjay'}">
-        <h1>{{ title }}</h1>
-        <p>{{ message }}</p>
-        <p x-text="name"></p>
+    <div class="mt-7 p-3 flex-auto" x-data="{name: 'Anjay Template'}">
+        <div class="flex flex-col items-center">
+            <h1 class="text-xl">{{ title }} 🥰</h1>
+            <p class="text-xl">{{ message }}</p>
+            <img src="https://i.pinimg.com/originals/e5/d8/ee/e5d8ee323f9526725d6ad355eaed7b05.gif" alt="image" width="400px">
+            <p class="text-xl" x-text="name"></p>
+        </div>
     </div>
 {% endblock content %}
