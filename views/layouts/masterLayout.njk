@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include "includes/head.njk" %}
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Monolithic Express Docker Template</title>
+        <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico" />
+        <link rel="stylesheet" href="/css/styles/main.css"/>
+        {# <link rel="stylesheet" href="/css/library/bootstrap.min.css"/> #}
+        
+        {# <script src="/js/library/bootstrap.js"></script> #}
+        <script src="/js/library/alpine.js" defer></script>
+        <script src="/js/library/htmx.js"></script>
+        <script src="/js/library/jquery.js"></script>
+    </head>
     <body class="font-nunito flex flex-col h-screen justify-between">
-        {% include "components/navbar.njk" %}
+        {% include "includes/navbar.njk" %}
         {% block content %}{% endblock content %}
-
-        {% include "components/footer.njk" %}
-        {% include "includes/script.njk" %}
+        {% include "includes/footer.njk" %}
+        <script src="/js/scripts/main.js"></script>
     </body>
 </html>
