@@ -1,0 +1,5 @@
+{% macro button(text, id='test-btn') %}
+<button id="{{ id }}" onclick="return alert('Hi Kids')" class="bg-braincore py-1 px-2 rounded-md text-white text-sm hover:bg-" >
+    {{text}}
+</button>
+{% endmacro %}

@@ -4,10 +4,10 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: url('./../fonts/Nunito-Medium.ttf');
+    src: url('./../../fonts/Nunito-Medium.ttf');
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('./../fonts/Poppins-Regular.ttf');
+    src: url('./../../fonts/Poppins-Regular.ttf');
 }
